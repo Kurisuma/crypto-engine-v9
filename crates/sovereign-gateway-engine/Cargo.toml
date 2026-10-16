@@ -1,0 +1,42 @@
+[package]
+name = "sovereign-gateway-engine"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[features]
+default = ["sqlite-hybrid", "imprce-cache", "axum-integration"]
+sqlite-hybrid = []
+imprce-cache = []
+mock-testing = []
+axum-integration = ["dep:axum"]
+
+[dependencies]
+gw-primitives = { path = "../gw-primitives" }
+gw-storage-oberer = { path = "../gw-storage-oberer" }
+gw-imprce = { path = "../gw-imprce" }
+gw-enterprise-traits = { path = "../gw-enterprise-traits" }
+gw-chain-adapters = { path = "../gw-chain-adapters" }
+gw-engine = { path = "../gw-engine" }
+gw-kms-enclave = { path = "../gw-kms-enclave" }
+gw-treasury = { path = "../gw-treasury" }
+gw-router = { path = "../gw-router" }
+oberer-orm = { path = "../../oberer-lite/oberer-orm" }
+async-trait = "0.1"
+alloy-primitives = { version = "0.8", default-features = false }
+axum = { version = "0.8", optional = true }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+uuid = { version = "1.10", features = ["v4", "serde"] }
+chrono = { version = "0.4", default-features = false, features = ["clock", "serde"] }
+tokio = { version = "1.40", features = ["sync", "rt", "macros"] }
+
+[dev-dependencies]
+proptest = "1.5"
+tower = { version = "0.5", features = ["util"] }
+axum = "0.8"

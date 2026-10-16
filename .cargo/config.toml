@@ -1,0 +1,8 @@
+[target.'cfg(all())']
+rustflags = [
+    "-D", "clippy::float_arithmetic",
+    "-D", "clippy::cast_possible_truncation",
+    "-D", "clippy::cast_sign_loss",
+    "-D", "clippy::unwrap_used",
+    "-D", "clippy::indexing_slicing"
+]

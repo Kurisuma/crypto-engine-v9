@@ -1,0 +1,3 @@
+[submodule "oberer-lite"]
+	path = oberer-lite
+	url = https://github.com/Kurisuma/Oberer-lite.git

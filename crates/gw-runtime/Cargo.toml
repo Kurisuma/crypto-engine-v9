@@ -1,0 +1,37 @@
+[package]
+name = "gw-runtime"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+gw-primitives = { path = "../gw-primitives" }
+gw-storage-oberer = { path = "../gw-storage-oberer" }
+gw-imprce = { path = "../gw-imprce" }
+gw-enterprise-traits = { path = "../gw-enterprise-traits" }
+gw-chain-adapters = { path = "../gw-chain-adapters" }
+gw-engine = { path = "../gw-engine" }
+gw-kms-enclave = { path = "../gw-kms-enclave" }
+gw-treasury = { path = "../gw-treasury" }
+gw-router = { path = "../gw-router" }
+sovereign-gateway-engine = { path = "../sovereign-gateway-engine" }
+oberer-orm = { path = "../../oberer-lite/oberer-orm" }
+async-trait = "0.1"
+alloy-primitives = { version = "0.8", default-features = false }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+uuid = { version = "1.10", features = ["v4", "serde"] }
+chrono = { version = "0.4", default-features = false, features = ["clock", "serde"] }
+tokio = { version = "1.40", features = ["sync", "rt", "rt-multi-thread", "macros", "time"] }
+sha2 = "0.10"
+blake3 = { version = "1.5", features = ["zeroize"] }
+hex = "0.4"
+
+[dev-dependencies]
+proptest = "1.5"
+tempfile = "3.12"

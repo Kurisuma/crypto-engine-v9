@@ -1,0 +1,35 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/gw-primitives",
+    "crates/gw-storage-oberer",
+    "crates/gw-imprce",
+    "crates/gw-enterprise-traits",
+    "crates/gw-chain-adapters",
+    "crates/gw-engine",
+    "crates/gw-kms-enclave",
+    "crates/gw-treasury",
+    "crates/gw-router",
+    "crates/sovereign-gateway-engine",
+    "crates/gw-runtime",
+]
+exclude = [
+    "oberer-lite",
+]
+
+[workspace.package]
+version = "9.0.0"
+edition = "2024"
+rust-version = "1.85"
+authors = ["Tinnakorn"]
+license = "MIT"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+float_arithmetic = "deny"
+cast_possible_truncation = "deny"
+cast_sign_loss = "deny"
+unwrap_used = "deny"
+indexing_slicing = "deny"
