@@ -14,7 +14,7 @@ alloy-primitives = { version = "0.8", default-features = false, features = ["ser
 serde = { version = "1.0", features = ["derive"] }
 thiserror = "2.0"
 uuid = { version = "1.10", features = ["v4", "v7", "serde"] }
-oberer-orm = { path = "../../oberer-lite/oberer-orm" }
+oberer-orm = { path = "../../../Oberer-lite/oberer-orm" }
 
 [dev-dependencies]
 proptest = "1.5"

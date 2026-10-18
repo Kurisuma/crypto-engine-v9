@@ -15,7 +15,7 @@ gw-storage-oberer = { path = "../gw-storage-oberer" }
 gw-imprce = { path = "../gw-imprce" }
 gw-enterprise-traits = { path = "../gw-enterprise-traits" }
 gw-chain-adapters = { path = "../gw-chain-adapters" }
-oberer-orm = { path = "../../oberer-lite/oberer-orm" }
+oberer-orm = { path = "../../../Oberer-lite/oberer-orm" }
 async-trait = "0.1"
 alloy-primitives = { version = "0.8", default-features = false }
 sha2 = "0.10"

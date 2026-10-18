@@ -13,7 +13,7 @@ workspace = true
 gw-primitives = { path = "../gw-primitives" }
 gw-storage-oberer = { path = "../gw-storage-oberer" }
 gw-enterprise-traits = { path = "../gw-enterprise-traits" }
-oberer-orm = { path = "../../oberer-lite/oberer-orm" }
+oberer-orm = { path = "../../../Oberer-lite/oberer-orm" }
 async-trait = "0.1"
 alloy-primitives = { version = "0.8", default-features = false }
 k256 = { version = "0.13", default-features = false, features = ["arithmetic"] }

@@ -20,7 +20,7 @@ gw-kms-enclave = { path = "../gw-kms-enclave" }
 gw-treasury = { path = "../gw-treasury" }
 gw-router = { path = "../gw-router" }
 sovereign-gateway-engine = { path = "../sovereign-gateway-engine" }
-oberer-orm = { path = "../../oberer-lite/oberer-orm" }
+oberer-orm = { path = "../../../Oberer-lite/oberer-orm" }
 async-trait = "0.1"
 alloy-primitives = { version = "0.8", default-features = false }
 serde = { version = "1.0", features = ["derive"] }

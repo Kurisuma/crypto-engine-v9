@@ -14,7 +14,7 @@ workspace = true
 gw-primitives = { path = "../gw-primitives" }
 gw-storage-oberer = { path = "../gw-storage-oberer" }
 gw-enterprise-traits = { path = "../gw-enterprise-traits" }
-oberer-orm = { path = "../../oberer-lite/oberer-orm" }
+oberer-orm = { path = "../../../Oberer-lite/oberer-orm" }
 async-trait = "0.1"
 blake3 = { version = "1.5", features = ["zeroize"] }
 crc32fast = "1.4"

@@ -12,8 +12,8 @@ workspace = true
 [dependencies]
 gw-primitives = { path = "../gw-primitives" }
 gw-enterprise-traits = { path = "../gw-enterprise-traits" }
-oberer-orm = { path = "../../oberer-lite/oberer-orm" }
-oberer-orm-derive = { path = "../../oberer-lite/oberer-orm-derive" }
+oberer-orm = { path = "../../../Oberer-lite/oberer-orm" }
+oberer-orm-derive = { path = "../../../Oberer-lite/oberer-orm-derive" }
 async-trait = "0.1"
 blake3 = { version = "1.5", features = ["zeroize"] }
 subtle = "2.6"
